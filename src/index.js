@@ -1,10 +1,12 @@
-import "./styles.css";
-import { greeting } from "./greeting.js";
-import odinImage from "./images/odin.png";
+import LinkedList from "./link-list.js";
 
-console.log(greeting);
+const list = new LinkedList();
 
-const image = document.createElement("img");
-image.src = odinImage;
-   
-document.body.appendChild(image);
+list.append("dog");
+list.append("cat");
+list.append("parrot");
+list.append("hamster");
+list.append("snake");
+list.append("turtle");
+
+console.log(list.toString());
