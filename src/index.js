@@ -10,6 +10,8 @@ list.append("hamster");
 list.append("snake");
 list.append("turtle");
 
+//list.insertAt("snake", 2);
+//list.removeAt(1);
 //list.pop();
 //list.pop();
 

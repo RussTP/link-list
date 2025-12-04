@@ -111,4 +111,48 @@ export default class LinkedList {
         stringResult += "null";
         return stringResult;
     }
+
+    insertAt(value, index) {
+        let current = this.head;
+        let counter = 0;
+
+      if (index === this.size()) {
+        this.append(value);
+        return;
+
+      } else if (index === 0) {
+        this.prepend(value);
+        return;
+      } 
+
+        while (counter < index -1) {
+            current = current.nextNode;
+            counter ++;
+           
+        }
+         const newNode = new Node(value);
+          newNode.nextNode = current.nextNode;
+          current.nextNode = newNode;
+    }
+
+    removeAt(index) {
+        let current = this.head;
+        let counter = 0;
+
+        if (index === 0) {
+           const removed = this.head;
+           this.head = this.head.nextNode;
+           return removed;
+        } else if ( index === this.size()-1) {
+            return this.pop();
+        } else {
+          while (counter < index -1) {
+            current = current.nextNode;
+            counter ++;
+        }
+        let removeNode = current.nextNode;
+        current.nextNode = removeNode.nextNode;
+        return removeNode;
+        }
+    }
 }

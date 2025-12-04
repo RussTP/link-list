@@ -18,3 +18,7 @@
 
 --toString represents your LinkedList objects as strings, so you can print them out and preview them in the console. The format should be: ( value ) -> ( value ) -> ( value )
 -> null
+
+to test pop() uncomment: //list.pop();//list.pop();
+to test insertAt uncomment://list.insertAt("snake", 2);
+to test removeAt() uncomment: //list.removeAt(1);
