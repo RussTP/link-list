@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "<!--WebPack project setup for webpack.dev and webpack.prod-->",
   "main": "index.js",
+  "type": "module",
 "scripts": {
   "build": "webpack --config webpack.config.js",
   "dev": "webpack serve --config webpack.config.js"
